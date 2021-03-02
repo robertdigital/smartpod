@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2021-03-02T00:51:26.799Z" agent="5.0 (Windows)" etag="nZ8S85Zh-2NyU06lcf0E" version="14.4.3" type="github">
+<mxfile host="app.diagrams.net" modified="2021-03-02T01:00:02.020Z" agent="5.0 (Windows)" etag="ZMcOtBvNOdOmjQLYvPFI" version="14.4.3" type="github">
   <diagram id="dDZ2D7s4tO_t5auYRhyF" name="Page-1">
-    <mxGraphModel dx="3290" dy="1230" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="2739" dy="943" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -330,6 +330,11 @@
         </mxCell>
         <mxCell id="T8Z3I52FqVb8E1TeL7ku-108" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.005;exitY=0.43;exitDx=0;exitDy=0;exitPerimeter=0;entryX=1;entryY=0.75;entryDx=0;entryDy=0;" edge="1" parent="1" source="T8Z3I52FqVb8E1TeL7ku-80" target="T8Z3I52FqVb8E1TeL7ku-4">
           <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="T8Z3I52FqVb8E1TeL7ku-119" value="WiFi" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="T8Z3I52FqVb8E1TeL7ku-108">
+          <mxGeometry x="-0.4323" y="-1" relative="1" as="geometry">
+            <mxPoint x="-1" as="offset" />
+          </mxGeometry>
         </mxCell>
         <mxCell id="T8Z3I52FqVb8E1TeL7ku-80" value="" style="points=[[0.005,0.09,0],[0.08,0,0],[0.76,0.25,0],[1,0.92,0],[0.91,0.995,0],[0.57,0.995,0],[0.045,0.955,0],[0.005,0.43,0]];verticalLabelPosition=bottom;html=1;verticalAlign=top;aspect=fixed;align=center;pointerEvents=1;shape=mxgraph.cisco19.3g_4g_indicator;fillColor=#005073;strokeColor=none;" vertex="1" parent="1">
           <mxGeometry x="69.99999999999999" y="251.86" width="50" height="50" as="geometry" />
