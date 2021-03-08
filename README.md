@@ -12,6 +12,7 @@ Software Specifications
 Drivers and 3rd Party Software
 -------------------------------
 * [CAN Driver for Pi](https://copperhilltech.com/what-is-socketcan/)
+* [Mosquitto MQTT Broker](https://mosquitto.org/)
 
 Hardware
 -----------------------
