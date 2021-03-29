@@ -29,8 +29,8 @@ def lights():
     """
     Insert call listDevices(type="light")
     """
-    return json.dumps([{"id":1,"status":True, "desc": "Middle Hallway", "type":"strip","group":"hallways", "color": 0x000000},
-        {"id":2,"status":False, "desc": "Living Room Center Console", "type": "bulb", "group":"Living Room", "color":0xffffff}])
+    return json.dumps([{"id":1,"status":True, "desc": "Middle Hallway", "type":"strip","group":"hallways", "color": 0x000000, "ata":"ATA 32 00-100-125"},
+        {"id":2,"status":False, "desc": "Living Room Center Console", "type": "bulb", "group":"Living Room", "color":0xffffff, "ata":"ATA 32 00-200-126"}])
 
 @app.route('/light', methods=['POST'])
 def add_light():
@@ -51,7 +51,7 @@ def get_light():
     """
     Insert call to getDevice(id=x) here
     """
-    return json.dumps({"id":2,"status":False, "desc": "Living Room Center Console", "type": "bulb", "group":"Living Room", "color":0xffffff})
+    return json.dumps({"id":2,"status":False, "desc": "Living Room Center Console", "type": "bulb", "group":"Living Room", "color":0xffffff, "ata":"ATA 32 00-200-126"})
 
 @app.route('/light',methods=["DELETE"])
 def delete_light():
