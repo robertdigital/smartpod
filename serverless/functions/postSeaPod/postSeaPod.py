@@ -13,7 +13,7 @@ def generateUUID(dynamodb=None):
         dynamodb = boto3.resource('dynamodb')
     
     table = dynamodb.Table('seapod')
-    uid = uuid.uuid4()
+    uid = str(uuid.uuid4())
     isDuplicate = False
 
     
@@ -29,10 +29,14 @@ def generateUUID(dynamodb=None):
         print(e.response['Error']['Message'])
 
     for item in data:
-        logger.info("item infor: %s",item)
+        pk = item['pk'];
+        if pk == uid:
+            logger.info("duplicate found, generating uuuid again")
+            uid = generateUUID()
+        logger.info("item info: %s",item['pk'])
 
     logger.info("UUID4 %s",uid)
-    return str(uid);    
+    return uid;    
 
 def put_seapod(seapodid, name, port, dynamodb=None):
     if not dynamodb:
@@ -60,7 +64,8 @@ def lambda_handler(event, context):
     
     logger.info("http_method: %s query_string: %s headers: %s body: %s",http_method,query_string,headers,body)
     logger.info(" generateUUID() == %s", generateUUID())
-    seapodid = event['id']
+    seapodid = generateUUID()
+    # event['id']
     name = event['name']
     port = event['port']
     
