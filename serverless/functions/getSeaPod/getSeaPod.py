@@ -143,4 +143,4 @@ def lambda_handler(event, context):
         api_exception_json = json.dumps(api_exception_obj)
         logger.error("Error %s", str(api_exception_json))
         return api_exception_obj
-        # raise ClientException(api_exception_json)
+
